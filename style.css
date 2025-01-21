@@ -8,18 +8,21 @@
 
 body{
     background-color: #FAFAFA;
+    margin: 0 auto;
 }
 
 header{
-    width: 100%;
+    width: 100% !important;
     height: 793px;
     background-image: url(./images/cover.jpg);
-    background-size: cover;
-    display: inline-block;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+   
 }
 
 .navbar{
-    width: 1322px;
+    width: 100%;
     height: 104px;
     display: flex;
     justify-content: space-between;
@@ -29,6 +32,7 @@ header{
     transform: translateX(-50%);
     transition: 0.6s;
 }
+
 .logo{
     font-size: 36px;
     font-weight: bolder;
@@ -71,20 +75,21 @@ header{
 }
 
 .wrapper{
-    width: 1046px;
+    width: 85%;
     height: 900px;
-    display: flexbox;
+    display: flex;
     position: absolute;
     top: 101px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-around;
 }
 
 .firstPart{
-    width: 1139px;
+    width: 80%;
     height: 481px;
 }
 
@@ -138,7 +143,7 @@ header{
 .secondPart{
     display: flex;
     justify-content: space-between;
-    width: 1046px;
+    width: 80%;
 }
 
 .enviromental{
@@ -213,8 +218,7 @@ header{
 .financial h3{
     font-size: 24px;
     font-weight: 700;
-    line-height: 32px;
-    letter-spacing: 0.1px;  
+    line-height: 32px; letter-spacing: 0.1px;  
 }
 
 .feautures-10{
@@ -223,13 +227,13 @@ header{
     left: 50%;
     transform: translateX(-50%);
     height: 526px;
-    width: 1440px;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
 
 .feautures-10>.container{
-    width: 1050px;
+    width: 100%;
     height: 526px;
     display: flex;
     flex-direction: column;
@@ -293,7 +297,7 @@ header{
 }
 
 .feautures-7{
-    width: 1440px;
+    width: calc(display(100%));
     height: 699px;
     position: absolute;
     top: 1450px;
@@ -304,7 +308,7 @@ header{
 }
 
 .feautures-7>.f7Content{
-    width: 1050px;
+    width: 85%;
     height: 698px;
     display: flex;
     justify-content: center;
@@ -314,7 +318,7 @@ header{
 
 .feautures-7>.f7Content>.f7Container{
     height: 197px;
-    width: 1050px;
+    width: 85%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -337,7 +341,7 @@ header{
 }
 
 .feautures-7>.f7Content>.f7Row{
-    width: 1049px;
+    width: 100%;
     height: 341px;
     display: flex;
     flex-direction: row;
@@ -377,7 +381,7 @@ header{
 }
 
 .about{
-    width: 1440px;
+    width: calc(display(100%));
     height: 890px;
     position: absolute;
     top: 2100px;
@@ -392,7 +396,7 @@ header{
 .about>.about-container{
     display: flex;
     flex-direction: column;
-    width: 1050px;
+    width: 85%;
     height: 845px;
     justify-content: center;
     align-items: center;
@@ -421,7 +425,7 @@ header{
 }
 
 .about>.about-container>.about-row2{
-    width: 1054px;
+    width: 85%;
     height: 442px;
     display: flex;
     justify-content: space-between;
@@ -480,7 +484,7 @@ header{
 }
 
 .client2{
-    width: 1440px;
+    width: calc(display(100%));
     height: 339px;
     position: absolute;
     top: 3000px;
@@ -494,7 +498,7 @@ header{
 }
 
 .client2>.container{
-    width: 1050px;
+    width: 85%;
     height: 175px;
     display: flex;
     justify-content: space-between;
@@ -554,14 +558,14 @@ header{
 }
 
 .black{
-    width: 1440px;
+    width: calc(display(100%));
     height: 77px;
     background-color: black;
 
 }
 
 .contact{
-    width: 1440px;
+    width: calc(display(100%));
     height: 808px;
     position: absolute;
     transform: translateX(-50%);
@@ -573,7 +577,7 @@ header{
 }
 
 .contact-container{
-    width: 1050px;
+    width: 85%;
     height: 808px;
     display: flex;
     flex-direction: column;
@@ -605,7 +609,7 @@ header{
 }
 
 .contact-content{
-    width: 985px;
+    width: 70%px;
     height: 393px;
     display: flex;
     align-items: center;
@@ -677,7 +681,7 @@ header{
 }
 
 footer{
-    width: 1440px;
+    width: calc(display(100%));
     height: 488px;
     position: absolute;
     top:4125px;
@@ -690,7 +694,7 @@ footer{
 }
 
 .footFirstPart{
-    width: 1440px;
+    width: calc(display(100%));
     height: 142px;
     background-color: #FAFAFA;
     display: flex;
@@ -699,7 +703,7 @@ footer{
 }
 
 .firstPartContent{
-    width: 1050px;
+    width: 85%;
     height: 142px;
     display: flex;
     align-items: center;
@@ -739,7 +743,7 @@ footer{
 }
 
 .footSecondPart{
-    width: 1440px;
+    width: calc(display(100%));
     height: 272px;
     color: #fff;
     background-color: #17213C;
@@ -748,7 +752,7 @@ footer{
 }
 
 .footSecondPart>.SecondPartContent{
-    width: 1050px;
+    width: 85%;
     height: 272px;
     display: flex;
     justify-content: space-between;
@@ -782,15 +786,15 @@ footer{
 }
 
 .footLastPart{
-    width: 1440px;
-    height: 74px;
+    width: calc(display(100%));
+        height: 74px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .footLastPart>.lastPartContent{
-    width: 1050px;
+    width: calc(display(100%));
     height: 50px;
     display: flex;
     justify-content: space-between;
@@ -807,3 +811,4 @@ footer{
     height: 30px;
     cursor: pointer;
 }
+  
